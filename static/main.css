@@ -1,14 +1,14 @@
 *{
-    background-color: #09542d;
+    background-color: #67b983;
     font-family: 'Nunito', sans-serif;
 }
 
 body{
-    background-color: #09542d;
+    background-color: #67b983;
 }
 
 a {
-    color: #febe41;
+    color: #ffffff;
 }
 
 html {
@@ -34,11 +34,17 @@ html {
 #brand{
     font-family: 'Barriecito', cursive;
     /* background-color: #ded2aa; */
-    color: #febe41;
+    color: #fbe609;
+    font-size: 21px;
 }
 
 .nav-group{
     font-size: 100%;
+}
+
+.nav-item{
+    text-transform: uppercase;
+    font-size: 21px;
 }
 
 /* .navbar, .navbar-container {
@@ -96,13 +102,13 @@ img{
 button{
     border-radius: 12px;
     padding: 10px;
-    background-color: #febe41;
+    background-color: #fbe609;
     border: none;
 }
 
 
 #donate{
-    color:#09542d;
+    color:#67b983;
     text-transform: uppercase;
 }
 
@@ -114,7 +120,7 @@ button{
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 21px;  
     border: none;
     outline: none;
     /* background-color: #ded2aa; */
@@ -157,7 +163,7 @@ nav{
 
 .header{
     font-family: 'Barriecito', cursive;
-    color: #febe41;
+    color: #fbe609;
     display: flex;
     justify-content: center;
     font-size: 70px;
@@ -165,7 +171,7 @@ nav{
 
 .section-header{
     font-family: 'Josefin Sans', sans-serif;
-    color: #febe41;
+    color: #fbe609;
     display: flex;
 }
 
@@ -231,4 +237,142 @@ hr{
 h1{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+/* .profile-pic{
+    margin-left: 25%;
+    margin-bottom: 5%;
+    border-radius: 50%;
+} */
+
+.team p{
+    color: white;
+}
+
+.name, .title{
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 500;
+}
+
+.popup .popup-content {
+    width: 60vw;
+    height: 80vh;
+    margin-top: 100px;
+    left: 20%;
+    position: relative;
+    border: 5px solid white;
+    background-color: #fff;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+    line-height: 0;
+    padding: 9px 0 11px;
+    width: 20px;
+    text-align: center;
+    z-index: 600;
+}
+
+.popup:target{
+    display: block;
+}
+
+.popup-content > .container > h1, .popup-content > .container > p {
+    position: relative;
+    padding: 5px;
+    z-index: 510;
+}
+
+.popup-content{
+    overflow-y: scroll;
+}
+
+
+/*//////////////*/
+/* TEAM SECTION */
+/*//////////////*/
+
+.team-box { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.team-box>* {
+    flex: 1 1 400px;
+}
+
+.team-div > .speakers {
+    display: column;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.team img {
+    padding: 20px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.speakers img {
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
 }

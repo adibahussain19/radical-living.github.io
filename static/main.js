@@ -12,29 +12,29 @@ $(document).ready(function(){
 
     $(".navbar").hover(
         function(){
-            $(".navbar").css('background-color', '#febe41');
-            $(".navbar-container").css('background-color', '#febe41');
-            $("#brand").css('background-color', '#febe41');
-            $("#brand").css('color', '#09542d');
-            $(" .dropdown .dropbtn").css('background-color', '#febe41');
-            $(".dropdown-content a").css('color', '#09542d');
-            $(".dropdown-content a").css('background-color', '#febe41');
-            $("a").css('color', '#09542d');
-            $("button").css('background-color', '#09542d');
-            $("#donate").css('color', '#febe41');
+            $(".navbar").css('background-color', '#ffffff');
+            $(".navbar-container").css('background-color', '#ffffff');
+            $("#brand").css('background-color', '#ffffff');
+            $("#brand").css('color', '#fbe609');
+            $(" .dropdown .dropbtn").css('background-color', '#ffffff');
+            $(".dropdown-content a").css('color', '#67b983');
+            $(".dropdown-content a").css('background-color', '#ffffff');
+            $("a").css('color', '#67b983');
+            $("button").css('background-color', '#fbe609');
+            $("#donate").css('color', '#67b983');
         },
 
         function(){
-            $(".navbar").css('background-color', '#09542d');
-            $(".navbar-container").css('background-color', '#09542d');
-            $("#brand").css('background-color', '#09542d');
-            $("#brand").css('color', '#febe41');
-            $(" .dropdown .dropbtn").css('background-color', '#09542d');
-            $(".dropdown-content a").css('color', '#febe41');
-            $(".dropdown-content a").css('background-color', '#09542d');
-            $("a").css('color', '#febe41');
-            $("button").css('background-color', '#febe41');
-            $("#donate").css('color', '#09542d');
+            $(".navbar").css('background-color', '#67b983');
+            $(".navbar-container").css('background-color', '#67b983');
+            $("#brand").css('background-color', '#67b983');
+            $("#brand").css('color', '#fbe609');
+            $(" .dropdown .dropbtn").css('background-color', '#67b983');
+            $(".dropdown-content a").css('color', '#ffffff');
+            $(".dropdown-content a").css('background-color', '#67b983');
+            $("a").css('color', '#ffffff');
+            $("button").css('background-color', '#fbe609');
+            $("#donate").css('color', '#67b983');
         }
     )
 })
