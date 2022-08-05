@@ -35,8 +35,9 @@ html {
 }
 
 #logo{
-    height:40px;
+    height:50px;
     opacity: 1;
+    border-radius:50%
 }
 
 #brand{
@@ -54,6 +55,7 @@ html {
     text-transform: uppercase;
     font-size: 21px;
 }
+
 
 /* .navbar, .navbar-container {
     background-color: #ded2aa;
@@ -120,6 +122,18 @@ button{
     text-transform: uppercase;
 }
 
+#contact button{
+    color:#67b983;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+#contact a{
+    color:#67b983;
+}
 /* dropdown */
 
 .dropdown {
@@ -259,8 +273,10 @@ h1{
       blink-caret .75s step-end infinite;
     font-family: 'Barriecito', cursive;
     /* background-color: #ded2aa; */
-    color: #fbe609;
+    background-color: #fbe609;
+    color: #509973;
     font-size: 30px;
+    width: 41%;
   }
   
   /* The typing effect */
@@ -277,8 +293,8 @@ h1{
 
 .typewriter{
     width: 100%;
-    margin-top: -33%;
-    margin-left: 38%;
+    z-index: 10;
+    /* margin-left: 38%; */
 }
 
 /* .profile-pic{
@@ -382,6 +398,7 @@ h1{
 
 .popup-content{
     overflow-y: scroll;
+    border-radius: 2%;
 }
 
 .popup-box{
@@ -438,4 +455,14 @@ h1{
 .highlights-media{
     max-width: 100%;
     padding-bottom: 10%;
+}
+
+#calendar *{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+section{
+    animation: transitionUp .75s;
 }
