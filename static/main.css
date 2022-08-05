@@ -34,18 +34,18 @@ html {
     opacity: 1;
 }
 
-#logo{
+/* #logo{
     height:50px;
     opacity: 1;
     border-radius:50%
-}
-
+} */
+/* 
 #brand{
     font-family: 'Barriecito', cursive;
-    /* background-color: #ded2aa; */
+    background-color: #ded2aa;
     color: #fbe609;
     font-size: 30px;
-}
+} */
 
 .nav-group{
     font-size: 100%;
@@ -465,4 +465,8 @@ h1{
 
 section{
     animation: transitionUp .75s;
+}
+
+.nav-right{
+    float:right;
 }

@@ -3,10 +3,16 @@ from flask import render_template
 from flask import Response, request, jsonify
 app = Flask(__name__)
 
+# client = MongoClient('localhost', 27017)
+
+# db = client.flask_db
+# todos = db.todos
+
 # ROUTES
 @app.route('/')
 def welcome():
-    return render_template('index.html')
+    # return render_template('index.html')
+    return render_template('navbar.html')
 
 @app.route('/about')
 def about():
