@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask import render_template
 from flask import Response, request, jsonify
@@ -27,4 +28,5 @@ def highlights():
     return render_template('highlights.html')
 
 if __name__ == '__main__':
-   app.run(debug = True)
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
