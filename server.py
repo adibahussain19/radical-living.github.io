@@ -11,8 +11,8 @@ app = Flask(__name__)
 # ROUTES
 @app.route('/')
 def welcome():
-    # return render_template('index.html')
-    return render_template('navbar.html')
+    return render_template('index.html')
+    # return render_template('navbar.html')
 
 @app.route('/about')
 def about():
