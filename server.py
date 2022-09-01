@@ -10,20 +10,20 @@ app = Flask(__name__)
 # todos = db.todos
 
 # ROUTES
-@app.route('/')
+@app.route('/', methods=("GET"))
 def welcome():
     return render_template('index.html')
     # return render_template('navbar.html')
 
-@app.route('/about')
+@app.route('/about', methods=("GET"))
 def about():
     return render_template('about.html')
 
-@app.route('/programs')
+@app.route('/programs', methods=("GET"))
 def programs():
     return render_template('programs.html')
 
-@app.route('/highlights')
+@app.route('/highlights', methods=("GET"))
 def highlights():
     return render_template('highlights.html')
 
